@@ -1,0 +1,89 @@
+@import url(./reset.css);
+@import url(./common.css);
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    justify-content: space-between;
+    background: #fff;
+}
+
+header h1 {
+    margin-right: 85px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.gnb {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.gnb li a {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 78px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav .link-wrap {
+    display: flex;
+    gap: 15px;
+}
+
+nav .biz-p {
+    width: 408px;
+    line-height: 50px;
+    background: #EAF8FB;
+    border-radius: 7px;
+    font-size: 16px;
+    color: #2F5E80;
+    font-weight: 500;
+    text-align: center;
+}
+
+nav .free-link {
+    display: block;
+    width: 180px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgb(48, 213, 212);
+    background: linear-gradient(45deg, rgba(48, 213, 212, 1) 0%, rgba(0, 166, 229, 1) 100%);
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}

@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'KT';
+    src: url('/assets/font/KTfontBold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.sc-visual {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 140px;
+    opacity: 0;
+}
+
+.vs-txt {
+    text-align: center;
+
+}
+
+.vs-txt span {
+    color: #00BFBE;
+    font-size: 24px;
+    margin-bottom: 28px;
+}
+
+.vs-txt h2 {
+    color: #222222;
+    font-size: 60px;
+    margin-bottom: 15px;
+    font-family: 'KT';
+}
+
+.vs-txt p {
+    font-size: 24px;
+    color: #555555;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.vis_icon {
+    opacity: 0;
+}
+
+.vis_icon [class*="vis_"] {
+    position: absolute;
+
+}
+
+.vis_icon01 {}
+
+.vis_icon02 {
+
+    left: 50%;
+    margin-left: -590px;
+}
+
+.vis_icon03 {
+    top: 420px;
+    left: 20%;
+    margin-left: -690px;
+}
+
+.vis_icon04 {
+    top: 200px;
+    left: 50%;
+    margin-left: -800px;
+}
+
+.vis_icon05 {
+
+    left: 50%;
+    margin-left: -590px;
+}
+
+.vis_icon06 {
+
+    left: 50%;
+    margin-left: -590px;
+}
+
+.vis_icon06 {
+
+    left: 50%;
+    margin-left: -590px;
+}
+
+.sc-visual .free-link {
+    width: 220px;
+    height: 58px;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 5px 12px 20px rgba(0, 198, 229, 0.3);
+    line-height: 58px;
+    text-align: center;
+    color: #fff;
+    -size: 20px;
+    font-weight: 500;
+    background: linear-gradient(45deg, rgba(0, 201, 200, 1) 0%, rgba(0, 130, 229, 1) 100%);
+    transition: box-shadow .4s;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 67px;
+}
+
+.sc-visual:before {
+    content: '';
+    display: block;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #EAF8FB;
+    width: 100%;
+    z-index: -1;
+}
+
+.sc-contents {
+    padding-top: 160px;
+    background: linear-gradient(176deg, #fff, #F4F6F9);
+    padding-bottom: 210px;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    display: flex;
+}
+
+.sc-contents h3 {
+    display: block;
+    text-align: center;
+    font-size: 42px;
+    color: #222222;
+    font-weight: 500;
+    margin-bottom: 30px;
+    line-height: 58px;
+    font-weight: 600;
+}
