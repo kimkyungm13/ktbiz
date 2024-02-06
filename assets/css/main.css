@@ -15,8 +15,7 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-    padding-top: 140px;
-    opacity: 0;
+    padding-top: 180px;
 }
 
 .vs-txt {
@@ -27,7 +26,8 @@
 .vs-txt span {
     color: #00BFBE;
     font-size: 24px;
-    margin-bottom: 28px;
+    opacity: 0;
+    display: block;
 }
 
 .vs-txt h2 {
@@ -35,6 +35,15 @@
     font-size: 60px;
     margin-bottom: 15px;
     font-family: 'KT';
+    opacity: 0
+}
+
+.vs-txt p:first-child {
+    font-size: 18px;
+}
+
+.vs-img svg {
+    opacity: 0;
 }
 
 .vs-txt p {
@@ -42,15 +51,13 @@
     color: #555555;
     line-height: 42px;
     margin-bottom: 20px;
-}
-
-.vis_icon {
-    opacity: 0;
+    opacity: 0
 }
 
 .vis_icon [class*="vis_"] {
     position: absolute;
-
+    left: 50%;
+    opacity: 0;
 }
 
 .vis_icon01 {}
@@ -107,6 +114,7 @@
     margin: 0 auto;
     font-size: 20px;
     margin-bottom: 67px;
+    opacity: 0;
 }
 
 .sc-visual:before {
@@ -141,3 +149,107 @@
     line-height: 58px;
     font-weight: 600;
 }
+
+.work-group {
+    display: flex;
+    gap: 50px;
+}
+
+.cont-left {
+    width: 418px;
+}
+
+.cont-left ul {}
+
+.cont-left .tab>ul>li {
+    margin-bottom: 10px;
+}
+
+.cont-left .tab>ul>li.on {
+    margin-top: 25px;
+}
+
+.cont-left .tab>ul>li button {
+    display: block;
+    height: 88px;
+    padding: 0 40px;
+    width: 100%;
+    text-align: left;
+    border-radius: 30px 30px 0 0;
+    font-size: 26px;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: relative;
+    background: linear-gradient(45deg, rgba(48, 213, 212, 0) 0%, rgba(0, 166, 229, 0) 100%);
+    color: #AEAEAE;
+    transition: 1s;
+
+}
+
+.info-list {
+    display: none;
+}
+
+.cont-left .tab>ul>li.on button {
+    background: linear-gradient(45deg, rgba(48, 213, 212, 1) 0%, rgba(0, 166, 229, 1) 100%);
+    color: #fff;
+}
+
+.cont-left .tab>ul>li>ul {
+    background: #FFFFFF;
+    padding: 0 40px;
+    display: none;
+    border-radius: 0 0 30px 30px;
+}
+
+.cont-left .tab>ul>li.on>ul {
+    display: block;
+}
+
+.cont-left .tab>ul>li>ul>li {
+    font-size: 20px;
+    line-height: 32px;
+    color: #222222;
+    padding: 20px 0;
+    border-bottom: 1px solid #E5E8E8;
+}
+
+.cont-right {
+    width: 970px;
+}
+
+.cont-right .img-list {
+    display: none;
+}
+
+.cont-right .on ul {
+    position: relative;
+    display: block;
+}
+
+.cont-right .on ul>li {
+    position: absolute;
+    top: 0;
+}
+
+.cont-wrap .on [class*='con'] {
+    display: block;
+}
+
+.cont-wrap .on [class*='con'] .img-list li {
+    opacity: 0;
+}
+
+.work-group>* {
+    opacity: 0;
+}
+
+.cont-wrap [class*='con'] {
+    display: none;
+}
+
+.cont-left .on ul>li>ul {
+    display: block;
+}
+
+.con01 ul>li {}
