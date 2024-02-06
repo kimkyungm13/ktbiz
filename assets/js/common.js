@@ -20,15 +20,25 @@ ScrollTrigger.create({
     trigger: "body",
 });
 const sect02 = gsap.timeline();
+sect02.to(['.work-group >*', '.cont-wrap .on [class^="con"] li'], { opacity: 1, y: -50, stagger: 0.5 })
+    .from('.sc-contents h3', { autoAlpha: 0, y: -10, stagger: 0.5 })
 ScrollTrigger.create({
     animation: sect02,
     trigger: ".work-group",
     y: -50,
 });
-sect02.to(['.sc-contents h3', '.work-group >*', '.cont-wrap .on [class^="con"] li'], { opacity: 1, y: -50, stagger: 0.5 })
 
 // 다른 애니메이션 등을 추가할 수 있습니다.
 
+//tab에 button클릭시
+$('.tab ul li button').click(function () {
+    //tab button 부모의 클래스안에 on을 지우고
+    $('.tab ul li button').parent().removeClass('on');
+    //클릭한 button 에 클래스 토글
+    $(this).parent().toggleClass('on');
+    //
+    $('.con1 .img-list').removeClass('on');
+})
 
 
 
