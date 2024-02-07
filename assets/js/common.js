@@ -20,8 +20,9 @@ ScrollTrigger.create({
     trigger: "body",
 });
 const sect02 = gsap.timeline();
-sect02.to(['.work-group >*', '.cont-wrap .on [class^="con"] li'], { opacity: 1, y: -50, stagger: 0.5 })
-    .from('.sc-contents h3', { autoAlpha: 0, y: -10, stagger: 0.5 })
+sect02.to('.sc-contents h3', { opacity: 1, y: -50, stagger: 0.5, duration: 1 })
+    .to(['.work-group >*', '.cont-wrap .on [class^="con"] .img-list li'], { opacity: 1, y: -50, stagger: 0.2 })
+
 ScrollTrigger.create({
     animation: sect02,
     trigger: ".work-group",
@@ -32,12 +33,20 @@ ScrollTrigger.create({
 
 //tab에 button클릭시
 $('.tab ul li button').click(function () {
+    gsap.to('.cont-wrap .on [class^="con"] .img-list li', { opacity: 0, y: -50, duration: 0 });
     //tab button 부모의 클래스안에 on을 지우고
     $('.tab ul li button').parent().removeClass('on');
     //클릭한 button 에 클래스 토글
     $(this).parent().toggleClass('on');
     //
     $('.con1 .img-list').removeClass('on');
+    // 버튼의 인덱스를 가져옵니다.
+    var index = $(this).parent().index();
+
+    // cont-wrap의 li 중에서 클릭한 버튼의 인덱스에 해당하는 li에 on 클래스를 추가합니다.
+    $('.cont-wrap > li').removeClass('on'); // 모든 li의 on 클래스 제거
+    $('.cont-wrap > li').eq(index).addClass('on'); // 클릭한 버튼의 인덱스에 해당하는 li에 on 
+    gsap.to($('.cont-wrap .on [class^="con"] .img-list li'), { opacity: 1, y: -100, stagger: 0.2 })
 })
 
 
