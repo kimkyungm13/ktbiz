@@ -8,11 +8,11 @@ tl.to([".vs-txt .sp-txt", ".vs-txt h2", ".vs-txt p"], { opacity: 1, stagger: 0.5
     .to(['.vs-img svg',], { opacity: 1, duration: 1, y: -50, stagger: 0.2 })
 
     .to('.vis_icon [class^="vis_"]', {
-        y: 5, // 위로 5px 이동
-        repeat: -1, // 무한 반복
-        yoyo: true, // 순방향, 역방향을 반복
+        y: 5,
+        repeat: -1,
+        yoyo: true,
         duration: 3,
-        stagger: 0.1,// 애니메이션 지속 시간
+        stagger: 0.1,
         anticipatePin: 1,
     })
 ScrollTrigger.create({

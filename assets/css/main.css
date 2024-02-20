@@ -254,3 +254,25 @@
 }
 
 .con01 ul>li {}
+
+.sc-slide {
+    position: relative;
+    padding: 155px 0;
+    padding-left: 470px;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.sc-slide .slide-tit strong {
+    display: block;
+    color: #222222;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.sc-slide .slide-tit p {
+    color: #555555;
+    font-size: 24px;
+    line-height: 42px;
+    margin-bottom: 90px;
+}
