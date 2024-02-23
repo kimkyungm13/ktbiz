@@ -1,7 +1,4 @@
-// Timeline을 생성합니다.
 var tl = gsap.timeline();
-
-// 여기에 Timeline에 추가할 애니메이션을 정의합니다.
 tl.to([".vs-txt .sp-txt", ".vs-txt h2", ".vs-txt p"], { opacity: 1, stagger: 0.5, duration: 0.5, y: -50, })
     .to([".sc-visual .free-link", '.vis_icon [class^="vis_"]'], { opacity: 1, stagger: 0.1, duration: 0.5, y: -50, })
 
@@ -29,23 +26,15 @@ ScrollTrigger.create({
     y: -50,
 });
 
-// 다른 애니메이션 등을 추가할 수 있습니다.
 
-//tab에 button클릭시
 $('.tab ul li button').click(function () {
     gsap.to('.cont-wrap .on [class^="con"] .img-list li', { opacity: 0, y: -50, duration: 0 });
-    //tab button 부모의 클래스안에 on을 지우고
     $('.tab ul li button').parent().removeClass('on');
-    //클릭한 button 에 클래스 토글
     $(this).parent().toggleClass('on');
-    //
     $('.con1 .img-list').removeClass('on');
-    // 버튼의 인덱스를 가져옵니다.
     var index = $(this).parent().index();
-
-    // cont-wrap의 li 중에서 클릭한 버튼의 인덱스에 해당하는 li에 on 클래스를 추가합니다.
-    $('.cont-wrap > li').removeClass('on'); // 모든 li의 on 클래스 제거
-    $('.cont-wrap > li').eq(index).addClass('on'); // 클릭한 버튼의 인덱스에 해당하는 li에 on 
+    $('.cont-wrap > li').removeClass('on');
+    $('.cont-wrap > li').eq(index).addClass('on');
     gsap.to($('.cont-wrap .on [class^="con"] .img-list li'), { opacity: 1, y: -100, stagger: 0.2 })
 })
 
